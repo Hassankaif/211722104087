@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export async function getAuthorizationtoken() {
-    const clientID = process.env.clientID;
-    const clientSecret = process.env.clientSecret;
-    cosnst url = process.env.base_URL;
+    const clientID ="e8e6f74f-8d63-4dc0-b863-b9b75c28e06e"
+    const clientSecret = "ubujmbXgCWhHmypx"
+    // const url = process.env.base_URL;
 
-    const res = await axios.get(url + '/auth', {
+    const res = await axios.get('http://20.244.56.144/evaluation-service/auth', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
